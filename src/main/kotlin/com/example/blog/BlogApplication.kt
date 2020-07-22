@@ -1,11 +1,11 @@
 package com.example.blog
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.SpringApplication
+import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.boot.runApplication
-import org.springframework.boot.Banner
 
 @SpringBootApplication
+@EnableConfigurationProperties(BlogProperties::class)
 class BlogApplication
 
 fun main(args: Array<String>) {
